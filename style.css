@@ -1,0 +1,168 @@
+html {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 1.8rem;
+  }
+  
+  #wrapper {
+    box-sizing: border-box;
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+    padding: 20px;
+    background-color: #2b2b2b;
+    color: #fff;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+  }
+  
+  #wrapper:hover {
+    transform: scale(1.02);
+  }
+  
+  .guesses, .lastResult {
+    color: white;
+    /* background-color: #3a3a3a; */
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+  }
+  
+  button, #subt {
+    background-color: #333333;
+    color: #e0e0e0;
+    width: 80%;
+    max-width: 250px;
+    height: 45px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover, #subt:hover {
+    background-color: #444444;
+    transform: scale(1.05);
+  }
+  
+  #guessField {
+    color: #fff;
+    width: 80%;
+    max-width: 250px;
+    height: 45px;
+    font-size: 1.2rem;
+    border: 2px solid #616161;
+    background-color: #1e1e1e;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: border-color 0.3s ease;
+  }
+  
+  #guessField:focus {
+    border-color: #757575;
+    outline: none;
+  }
+  
+  #guess {
+    font-size: 1.8rem;
+    color: #f5f5f5;
+    margin-top: 40px;
+  }
+  
+  p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #1f1f1f;
+    color: #bdbdbd;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    border-top: 2px solid #333;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.6rem;
+      padding: 10px;
+    }
+  
+    #wrapper {
+      width: 95%;
+      font-size: 1rem;
+      padding: 15px;
+    }
+  
+    button, #subt, #guessField {
+      width: 90%;
+      height: 40px;
+      font-size: 1rem;
+    }
+  
+    #guess {
+      font-size: 1.5rem;
+      margin-top: 30px;
+    }
+  
+    footer {
+      font-size: 0.85rem;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.4rem;
+    }
+  
+    #wrapper {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  
+    button, #subt, #guessField {
+      width: 100%;
+      font-size: 0.9rem;
+      height: 38px;
+    }
+  
+    #guess {
+      font-size: 1.3rem;
+    }
+  }
+  
